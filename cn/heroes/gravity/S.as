@@ -1,6 +1,8 @@
 package cn.heroes.gravity
 {
-public class S extends {
+import flash.display.Sprite;
+
+public class S extends Sprite {
 	public var earth:Boolean;
 	public function S() {
 	}
