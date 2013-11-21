@@ -35,6 +35,17 @@ package
 			timer.addEventListener(TimerEvent.TIMER,timerHandler);
 			timer.start();
 		}
+		
+		var G:Number = 1;
+		/**
+		 * The Gravity between a and b.
+		 */
+		public function gravi(a:Star, b:Star):Number {
+			// GMm/R2
+			var r = apart(a, b);
+			return G * a.m * b.m / (r * r);
+		}
+		
 		public function timerHandler(event:TimerEvent) {
 			angle += 0.5;
 			dev.x = earth.x + Math.sin(angle/180*Math.PI)*r;
