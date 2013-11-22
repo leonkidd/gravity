@@ -14,7 +14,8 @@ package
 		var r:Number = 0;
 		
 		public function Gravity() {
-			start();
+			//start();
+			
 		}
 		
 		public function start() {
